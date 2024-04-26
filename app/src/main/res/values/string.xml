@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">Pet Paradise</string>
+    <string name="app_name1">Likhar/nHotels and Service Apartments</string>
+
+    <style name="dialog_animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <string name="do_you">Do you want to exit app?</string>
+    <string name="limit_exceed_title">Size Exceeds</string>
+    <string name="ok">OK</string>
+    <string name="error_permisition_not_grant">Permission not granted.</string>
+    <string name="image_dialog_option_camera">Camera</string>
+    <string name="image_dialog_option_gallery">Choose Photo from Library</string>
+    <string name="error_title">Error</string>
+    <string name="error_someting_went_wrong">Something went wrong.Please try again later.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="gen_please_wait">Please Wait</string>
+    <string name="gen_pdf_file">Generate Pdf</string>
+    <string name="remember">Keep me Signed in</string>
+    <string name="message_loading">Loading Please Wait…</string>
+    <string name="error_authentication">Login failed</string>
+    <string name="error_server_error">Server error.</string>
+    <string name="error_no_network">Please check your connection or try again in a few minutes.</string>
+    <string name="something_went_">Something went Wrong</string>
+    <string name="timeout_error">TimeOut error.</string>
+    <string name="generic_error">Generic error.</string>
+    <string name="error_sign_in_username">Please  Enter  Mobile  Number</string>
+    <string name="error_sign_in_pass">Please enter your password.</string>
+    <string name="something_went">something went wrong</string>
+    <string name="save">Save </string>
+    <string name="cancel">Cancel </string>
+    <string name="back">Back</string>
+    <string name="_title">Attention</string>
+    <string name="limit_exceed_message_image">You can upload images up to 5 MB.</string>
+<!--    <string name="message_loading">Loading,please wait....</string>-->
+    <string name="login">LOGIN</string>
+    <string name="hotel_booking">Hotel Booking</string>
+    <string name="update_booking">Update Booking</string>
+    <string name="guest_info">Guest Information</string>
+    <string name="hint_username">Name</string>
+    <string name="hint_username1">User Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_contact">Contact Number</string>
+    <string name="hint_through">Through</string>
+    <string name="hint_in_date">IN Date</string>
+    <string name="hint_in_time">IN Time</string>
+    <string name="hint_out_date">Out Date</string>
+    <string name="hint_out_time">Out Time</string>
+    <string name="hint_amount">Amount Per Night</string>
+    <string name="hint_paid_by">Paid By</string>
+    <string name="hint_paid_status">Paid Status</string>
+    <string name="hint_payment_Dt">Payment Date</string>
+    <string name="hint_password">Password</string>
+    <string name="save1">SAVE</string>
+    <string name="update">UPDATE</string>
+    <string name="booking_list">Booking List</string>
+    <string name="welcome_to">Welcome To</string>
+    <string name="welcome_next">My Rock</string>
+    <string name="sign_up">Signup</string>
+    <string name="signup_msg"></string>
+    <string name="hotel_list">Hotel List</string>
+    <string name="rooms_details">Rooms Details</string>
+    <string name="status">Status</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="welcome">Welcome</string>
+    <string name="Register">Register</string>
+    <string name="today">Today </string>
+    <string name="yesterday">Yesterday</string>
+    <string name="invite">Invite &amp; Earn</string>
+    <string name="hotel_management">and Service Apartments</string>
+    <string name="text1">ABOUT OUR App</string>
+    <string name="appBarTitle">Little Paradise Pet</string>
+    <string name="Detail">Detail</string>
+    <string name="petDetail">Pet Details</string>
+    <string name="petName">Pet Name</string>
+    <!--
+        <string name="text2">    <string name="welcome_to1">MyRock application is for those who wants to to Stay connected.All the features you love are now within one app.Access or download sermons anytime from anywhere and never miss a message. Securely and easily give your tithes, offerings and donations. Instantly register for upcoming events, and stay in-the-know on whats happening. Contact your church admin at any time with a simple message.</string>
+    .
+    </string>
+        <string name="text3">OUR VALUES</string>
+        <string name="text4">I    <string name="welcome_to1"> Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</string>
+    . </string>
+        <string name="text5">VISION</string>
+        <string name="text6">
+               <string name="welcome_to1"> Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</string>
+    .</string>
+        <string name="text7">MISSION</string>
+        <string name="text8">
+              <string name="welcome_to1"> Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</string>
+    .</string>
+        <string name="text9">    <string name="welcome_to1"> Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</string>
+     .</string>
+        <string name="welcome_to1">Connect to MyRock app and get the Latest Sermons, Visitors  Details and Updates.</string>
+    -->
+
+    <string-array name="select_status">
+        <item>Select Status</item>
+        <item>Available</item>
+        <item>Waiting</item>
+    </string-array>
+
+    <string-array name="select_branch">
+        <item>Select Branch</item>
+        <item>Wardhman Nagar</item>
+        <item>Tukdoji Square</item>
+    </string-array>
+
+
+</resources>

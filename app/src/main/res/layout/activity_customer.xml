@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CustomerActivity">
+
+    <RelativeLayout
+        android:layout_width="@dimen/width_100"
+        android:background="#81A969"
+        android:layout_alignParentEnd="true"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:id="@+id/linearSearch"
+        android:layout_marginRight="@dimen/margin_10"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:background="@drawable/search"
+            android:drawableRight="@drawable/baseline_manage_search_24"
+            android:fontFamily="serif"
+            android:hint="Search by  Name,Mobile"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_15"
+            android:queryBackground="@android:color/transparent"
+            android:textSize="@dimen/text_15" />
+
+        <!-- <ImageButton
+             android:id="@+id/btn_search"
+             android:layout_width="@dimen/width_45"
+             android:layout_height="@dimen/height_50"
+             android:layout_marginLeft="2dp"
+             android:background="@drawable/button_white1"
+             android:src="@drawable/baseline_person_search_24" />-->
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/custDetailRecyclerView"
+        android:layout_below="@+id/linearSearch"
+        tools:listitem="@layout/customer_list_card"
+        />
+
+
+
+</RelativeLayout>

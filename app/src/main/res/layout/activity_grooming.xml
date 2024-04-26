@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.staff.GroomingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_70"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="@dimen/margin_15"
+            android:src="@drawable/baseline_arrow_circle_left_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:fontFamily="serif"
+            android:textSize="19sp"
+            android:text="Add Grooming Details"/>
+
+    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="@dimen/width_300"
+            android:weightSum="2"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="TABLE NO. : "
+                android:layout_marginTop="@dimen/margin_8"
+                android:id="@+id/custNameHold"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:textColor="@color/black"
+                android:id="@+id/tableNoGM"
+                android:text="1"
+                android:layout_marginTop="@dimen/margin_8"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/margin_10"
+            style="@style/material_edittext1"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/petNameGM"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:drawableStart="@drawable/baseline_pets_24"
+                android:drawablePadding="@dimen/padding_10"
+                android:typeface="serif"
+                android:inputType="text"
+                android:hint="Pet Name"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:layout_marginTop="@dimen/margin_10"
+                style="@style/material_edittext1"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dateGM"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:drawableStart="@drawable/baseline_calendar_month_24"
+                    android:drawablePadding="@dimen/padding_10"
+                    android:typeface="serif"
+                    android:inputType="text"
+                    android:hint="Date"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:layout_marginTop="@dimen/margin_10"
+                style="@style/material_edittext1"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/timeGM"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:drawableStart="@drawable/baseline_more_time_24"
+                    android:drawablePadding="@dimen/padding_10"
+                    android:typeface="serif"
+                    android:inputType="text"
+                    android:hint="Time"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="SERVICES"
+                android:layout_marginTop="@dimen/margin_8"
+                />
+
+            <Button
+                android:id="@+id/startServiceBtn"
+                android:layout_width="@dimen/width_150"
+                android:layout_height="@dimen/height_30"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/margin_20"
+                android:background="@drawable/button_background"
+                android:text="Start Service"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/washingLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_15"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="WASHING SERVICE"
+            android:layout_marginTop="@dimen/margin_8"
+            />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chk1"
+                android:fontFamily="serif"
+                android:text="Dirt Cleaning Shampoo"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chk2"
+                android:fontFamily="serif"
+                android:text="Inner Coat Refreshment Shampoo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/optional_back"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Optional"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:id="@+id/optChk1"
+                android:text="Anit Dandruff"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:id="@+id/optChk2"
+                    android:text="Anit Itching"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:id="@+id/optChk3"
+                    android:text="Anit Fleas"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:id="@+id/optChk4"
+                    android:text="Anit Ticks"/>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:id="@+id/chk3"
+                android:text="Conditioner"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:id="@+id/chk4"
+                android:text="Hair Smoothing Shampoo"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/dryingLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_15"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="DRYING AND CLEANING"
+                android:layout_marginTop="@dimen/margin_8"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chk5"
+                android:fontFamily="serif"
+                android:text="Body"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chk6"
+                android:fontFamily="serif"
+                android:text="Inner Area"/>
+
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:id="@+id/chk7"
+                android:text="Nail Cut"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:id="@+id/chk8"
+                android:text="Eye Cleaning"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:id="@+id/chk9"
+                android:text="Ear Cleaning"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:id="@+id/chk10"
+                android:text="Mouth Spray"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:id="@+id/chk11"
+                android:text="Hair Serum"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:id="@+id/chk12"
+                android:text="Hair Perfume"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hairLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_15"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="HAIR STYLING"
+                android:layout_marginTop="@dimen/margin_8"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chk13"
+                android:fontFamily="serif"
+                android:text="Hygine Cut"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/optional_back"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Optional"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:id="@+id/optChk21"
+                    android:text="Body Trim"/>
+
+
+
+            </LinearLayout>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:id="@+id/chk14"
+                android:text="Face Design"/>
+
+
+        </LinearLayout>
+                <Button
+                    android:id="@+id/stopService"
+                    android:layout_width="@dimen/width_150"
+                    android:layout_height="@dimen/height_30"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/margin_20"
+                    android:background="@drawable/button_background"
+                    android:text="Stop Service"
+                    android:textColor="@color/white" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:startIconDrawable="@drawable/baseline_edit_note_24"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_marginStart="@dimen/margin_15"
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_80"
+                        android:id="@+id/remarkEditTxt"
+                        android:hint="Any Remark"
+                        android:maxLines="3"
+                        android:drawablePadding="@dimen/padding_10"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_60"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    style="@style/material_edittext1"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/signature"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:drawableStart="@drawable/baseline_account_circle_24"
+                        android:drawablePadding="@dimen/padding_10"
+                        android:typeface="serif"
+                        android:inputType="text"
+                        android:hint="Signature"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="@dimen/width_200"
+                        android:layout_height="@dimen/height_55"
+                        android:text="Submit"
+                        android:layout_marginStart="@dimen/margin_15"
+                        android:background="@drawable/button_background"
+                        android:drawableStart="@drawable/baseline_gpp_good_24"
+                        android:paddingStart="@dimen/padding_10"
+                        android:typeface="serif"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:textColor="@color/white"
+                        android:drawableTint="@color/white"
+                        android:id="@+id/saveGMBtn"/>
+
+                    <Button
+                        android:layout_width="@dimen/width_115"
+                        android:layout_height="@dimen/height_55"
+                        android:text="Cancel"
+                        android:typeface="serif"
+                        android:background="@drawable/button_background"
+                        android:layout_marginStart="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

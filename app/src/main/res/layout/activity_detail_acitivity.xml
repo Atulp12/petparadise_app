@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DetailAcitivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_250"
+        android:id="@+id/petImg"
+        android:src="@drawable/petlg"
+        android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="Pet"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10"
+
+        android:layout_marginEnd="@dimen/margin_20"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailField"
+            style="@style/material_edittext1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/margin_10"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/petNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:drawablePadding="@dimen/padding_10"
+                android:hint="Pet's Name"
+                android:inputType="text"
+                android:typeface="serif" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/margin_10"
+            style="@style/material_edittext1"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/breedTxt"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:drawableStart="@drawable/baseline_pets_24"
+                android:drawablePadding="@dimen/padding_10"
+                android:typeface="serif"
+                android:inputType="text"
+                android:hint="Breed"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/margin_10"
+            style="@style/material_edittext1"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/birthdayTxt"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:drawableStart="@drawable/baseline_cake_24"
+                android:drawablePadding="@dimen/padding_10"
+                android:typeface="serif"
+                android:inputType="text"
+                android:hint="Birthday"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_30"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:textSize="16sp"
+
+                android:text="Dog Type"/>
+
+           <RadioGroup
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/radioGrp"
+               android:orientation="horizontal">
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/small"
+                   android:text="Small"/>
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/medium"
+                   android:text="Medium"/>
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/large"
+                   android:text="Large"/>
+
+           </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/light_gray"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="Customer"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/material_edittext1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:layout_marginTop="@dimen/margin_10"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/custNameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:drawablePadding="@dimen/padding_10"
+                    android:hint="Customer Name"
+                    android:inputType="text"
+                    android:typeface="serif" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:layout_marginTop="@dimen/margin_10"
+                style="@style/material_edittext1"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phoneTxt"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:drawableStart="@drawable/baseline_call_24"
+                    android:drawablePadding="@dimen/padding_10"
+                    android:typeface="serif"
+                    android:inputType="text"
+                    android:hint="Call"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_10"
+                style="@style/material_edittext1"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addressTxt"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:drawableStart="@drawable/baseline_location_on_24"
+                    android:drawablePadding="@dimen/padding_10"
+                    android:typeface="serif"
+                    android:inputType="text"
+                    android:hint="Address"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/light_gray"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Reminder"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:startIconDrawable="@drawable/baseline_edit_note_24"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_80"
+                    android:id="@+id/reminderEditText"
+                    android:hint="Any Reminder"
+                    android:maxLines="3"
+                    android:drawablePadding="@dimen/padding_10"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/light_gray"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="Status"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginEnd="@dimen/margin_15"
+                android:background="@drawable/branch_decor"
+                >
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_55"
+            android:id="@+id/statusSpin"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:spinnerMode="dropdown"
+            />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30"
+            android:layout_marginStart="@dimen/margin_10"
+            android:elevation="5dp"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:text="Start Gromming"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

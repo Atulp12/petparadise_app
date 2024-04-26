@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DummyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_100"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/relSignup"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_40"
+                android:layout_marginStart="@dimen/margin_20"
+                android:id="@+id/backLgn"
+
+                android:src="@drawable/baseline_arrow_back_ios_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="122dp"
+                android:layout_marginTop="@dimen/margin_40"
+                android:layout_toEndOf="@+id/backLgn"
+                android:typeface="serif"
+                android:text="SIGNUP"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_15"
+
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/margin_20"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/color6"
+                app:helperTextEnabled="true"
+                android:id="@+id/userField"
+                style="@style/material_edittext1"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_account_circle_24"
+                    android:drawablePadding="@dimen/padding_10"
+                    android:id="@+id/userName"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:typeface="serif"
+                    android:inputType="text"
+
+                    android:hint="User Name"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/color6"
+                app:helperTextEnabled="true"
+                android:id="@+id/phoneField"
+                style="@style/material_edittext1"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_call_24"
+                    android:drawablePadding="@dimen/padding_10"
+                    android:id="@+id/phoneNo"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:typeface="serif"
+                    android:inputType="phone"
+                    android:hint="Mobile Number"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/margin_15"
+
+                android:background="@drawable/branch_decor"
+                >
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_55"
+                    android:id="@+id/branchSpin"
+                    android:spinnerMode="dropdown"
+                    />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/color6"
+                android:layout_marginTop="@dimen/margin_10"
+                app:helperTextEnabled="true"
+                style="@style/material_edittext1"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_email_24"
+                    android:drawablePadding="@dimen/padding_10"
+                    android:id="@+id/emailId"
+                    android:typeface="serif"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:inputType="text"
+
+                    android:hint="Email"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/color6"
+                app:helperTextEnabled="true"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/light_grey"
+
+                android:id="@+id/passwordField"
+                style="@style/material_edittext1"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_enhanced_encryption_24"
+                    android:drawablePadding="@dimen/padding_10"
+                    android:id="@+id/password"
+                    android:typeface="serif"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:inputType="textPassword"
+
+                    android:hint="@string/hint_password"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="@dimen/width_200"
+                    android:layout_height="@dimen/height_55"
+                    android:text="Submit"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:background="@drawable/button_background"
+                    android:drawableStart="@drawable/baseline_gpp_good_24"
+                    android:paddingStart="@dimen/padding_10"
+                    android:typeface="serif"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:textColor="@color/white"
+                    android:drawableTint="@color/white"
+                    android:id="@+id/submitBtn"/>
+
+                <Button
+                    android:layout_width="@dimen/width_115"
+                    android:layout_height="@dimen/height_55"
+                    android:text="Cancel"
+                    android:typeface="serif"
+                    android:background="@drawable/button_background"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

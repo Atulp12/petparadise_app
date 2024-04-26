@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+
+        android:icon="@drawable/baseline_home_filled_24"/>
+
+
+    <item
+        android:id="@+id/customerHistory"
+        android:title="Customer"
+        android:icon="@drawable/baseline_format_list_bulleted_24"/>
+
+    <item
+        android:id="@+id/notification"
+        android:title="Notification"
+
+        android:icon="@drawable/baseline_edit_notifications_24"/>
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/baseline_exit_to_app_24"/>
+
+</menu>

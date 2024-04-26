@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#63cdde</color>
+    <color name="colorPrimaryDark">#0F570A</color>
+    <color name="colorPrimaryDark1">#32aeb1</color>
+    <color name="colorAccent">#0F570A</color>
+    <color name="lightAccent">#e9fafa</color>
+    <color name="lightAccent1">#e1f8f9</color>
+    <color name="white">@android:color/white</color>
+    <color name="white_light">#4cb3d4</color>
+    <color name="colorPrimary_light">#D4F2FF</color>
+    <color name="colorSecond">#fc9822</color>
+    <color name="colorThird">#F16300</color>
+    <color name="dark_grey">#808080</color>
+    <color name="light_grey">#737272</color>
+    <color name="back_dark_color">#081023</color>
+    <color name="snac_bar_bg">#aeaeae</color>
+    <color name="text_color">#808080</color>
+    <color name="snac_bar_text">#BFCFE8</color>
+    <color name="light_gray">#ddd</color>
+    <color name="light_gray1">#eee</color>
+    <color name="light_white">#FFFAF0</color>
+    <color name="black_text">#000000</color>
+    <color name="black_light">#BE000000</color>
+    <color name="black">#5c5c5c</color>
+    <color name="color_pre">#737272</color>
+    <color name="green">#2fa881</color>
+    <color name="dark_green">#24cd67</color>
+    <color name="light_green">#8B7CE6A6</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="one">#0c7b6f</color>
+    <color name="light_one">#055942</color>
+    <color name="light_two">#45bf9d</color>
+    <color name="two">#da2629</color>
+    <color name="one1">#6D95FA</color>
+    <color name="light_one1">#7EA1FA</color>
+    <color name="light_two1">#F16393</color>
+    <color name="three">#4E4B4C</color>
+    <color name="background">#1A070707</color>
+    <color name="customer">#938590B8</color>
+    <color name="three1">#676263</color>
+    <color name="four">#75D3D3</color>
+    <color name="customer1">#192b6c</color>
+    <color name="customer2">#233b8b</color>
+    <color name="colorProgressBar">#FFCE511C</color>
+    <color name="grad11">#27445C</color>
+    <color name="grad12">#0b7685</color>
+    <color name="grad13">#027985</color>
+    <color name="grad14">#27285C</color>
+    <color name="grad15">#4E3C83</color>
+    <color name="grad16">#968EFD</color>
+    <color name="grad17">#7aa1d2</color>
+    <color name="grad18">#5B4CE3</color>
+    <color name="grad5">#1A070707</color>
+    <color name="grad6">#f27a93</color>
+    <color name="grad7">#f27a93</color>
+    <color name="grad8">#ee5778</color>
+    <color name="color6">#F11543</color>
+    <color name="color7">#f4476b</color>
+    <color name="color8">#2E2252</color>
+    <color name="color12">#df1561</color>
+    <color name="color16">#89d0f0</color>
+    <color name="material_login_login_color">#000000</color>
+    <color name="material_login_register_color">#00ff37</color>
+    <color name="material_login_login_error_color">#ffbebe</color>
+    <color name="material_login_register_error_color">#600002</color>
+    <color name="bg_mainactivity">#d4e6e3</color>
+    <!-- Screens background color-->
+    <color name="bg_screen1">#16c266</color>
+    <color name="bg_screen2">#90c2bb</color>
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#39d1ba</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#8de7f9</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+    </array>
+</resources>
+

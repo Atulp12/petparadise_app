@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.LastActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_70"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="@dimen/margin_15"
+            android:src="@drawable/baseline_arrow_circle_left_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="serif"
+            android:text="Final Grooming"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_25"
+        android:id="@+id/groomClickTxt"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Pet's Groomed Image"/>
+
+
+    <ImageButton
+        android:id="@+id/camera_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/margin_10"
+        android:src="@drawable/baseline_camera_alt_24"
+        android:textColor="@color/white"
+        android:text="Camera" />
+
+        </RelativeLayout>
+    <ImageView
+        android:id="@+id/click_image"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/groomClickTxt"
+        android:scaleType="fitXY"
+        android:src="@drawable/noimage"
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_marginStart="@dimen/margin_15"
+        android:layout_marginEnd="@dimen/margin_15" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_15"
+            android:layout_marginEnd="@dimen/margin_15"
+            style="@style/material_edittext1"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/timeLS"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:drawableStart="@drawable/baseline_more_time_24"
+                android:drawablePadding="@dimen/padding_10"
+                android:typeface="serif"
+                android:inputType="text"
+                android:hint="End Time"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_15"
+            android:layout_marginEnd="@dimen/margin_15"
+            style="@style/material_edittext1"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reminderDay"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:drawableStart="@drawable/baseline_calendar_month_24"
+                android:drawablePadding="@dimen/padding_10"
+                android:typeface="serif"
+                android:inputType="text"
+                android:hint="Next Reminder(In days) "/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="@dimen/width_200"
+                android:layout_height="@dimen/height_55"
+                android:text="Complete Grooming"
+                android:layout_marginStart="@dimen/margin_15"
+                android:background="@drawable/button_background"
+                android:drawableStart="@drawable/baseline_gpp_good_24"
+                android:paddingStart="@dimen/padding_10"
+                android:typeface="serif"
+                android:layout_marginTop="@dimen/margin_10"
+                android:textColor="@color/white"
+                android:drawableTint="@color/white"
+                android:id="@+id/completeGroomBtn"/>
+
+            <Button
+                android:layout_width="@dimen/width_115"
+                android:layout_height="@dimen/height_55"
+                android:text="Cancel"
+                android:typeface="serif"
+                android:background="@drawable/button_background"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

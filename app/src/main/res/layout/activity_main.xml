@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="@dimen/width_100"
+        android:background="#81A969"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_110"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_15"
+        android:id="@+id/linear1"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/width_100"
+            android:layout_height="@dimen/height_120"
+            android:id="@+id/imgLogo"
+            android:src="@drawable/petlogo1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:textSize="18sp"
+            android:fontFamily="serif"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="Little Pet Paradise" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_marginStart="@dimen/margin_20"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:text="Welcome Admin"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin_15"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="vertical"
+
+          android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/height_150"
+              android:orientation="vertical"
+              >
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:scaleType="fitXY"
+                  android:src="@drawable/wave4"/>
+
+      <LinearLayout
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:background="@drawable/half_capsule"
+          android:layout_marginTop="@dimen/margin_15"
+         >
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:layout_gravity="center"
+              android:fontFamily="serif"
+              android:padding="@dimen/padding_10"
+              android:textColor="@color/colorPrimaryDark"
+              android:text="Select Package"/>
+
+      </LinearLayout>
+          </RelativeLayout>
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="@dimen/margin_20"
+              android:layout_marginEnd="@dimen/margin_10"
+              android:layout_marginBottom="@dimen/margin_15"
+              android:orientation="vertical">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginRight="5dp"
+                  android:orientation="horizontal"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:weightSum="2">
+
+                  <TextView
+                      android:id="@+id/packages1"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="2"
+                      android:fontFamily="serif"
+                      android:gravity="left"
+                      android:text="Complete Package"
+                      android:textAllCaps="true"
+                      android:textColor="#000"
+                      android:textSize="12sp"
+                      android:textStyle="bold" />
+
+                  <CheckBox
+                      android:id="@+id/ck1"
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+
+                      android:checked="false" />
+
+              </LinearLayout>
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginRight="5dp"
+                  android:orientation="horizontal"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:weightSum="2">
+
+                  <TextView
+                      android:id="@+id/packages2"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="2"
+                      android:fontFamily="serif"
+                      android:gravity="left"
+                      android:text="Washing Package"
+                      android:textAllCaps="true"
+                      android:textColor="#000"
+                      android:textSize="12sp"
+                      android:textStyle="bold" />
+
+                  <CheckBox
+                      android:id="@+id/ck2"
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:checked="false" />
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginRight="5dp"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:orientation="horizontal"
+                  android:weightSum="2">
+
+                  <TextView
+                      android:id="@+id/packages3"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="2"
+                      android:fontFamily="serif"
+                      android:gravity="left"
+                      android:text="Hygine Cut"
+                      android:textAllCaps="true"
+                      android:textColor="#000"
+                      android:textSize="12sp"
+                      android:textStyle="bold" />
+
+                  <CheckBox
+                      android:id="@+id/ck3"
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:checked="false" />
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginRight="5dp"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:orientation="horizontal"
+                  android:weightSum="2">
+
+                  <TextView
+                      android:id="@+id/packages4"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="2"
+                      android:fontFamily="serif"
+                      android:gravity="left"
+                      android:text="Body Trim"
+                      android:textAllCaps="true"
+                      android:textColor="#000"
+                      android:textSize="12sp"
+                      android:textStyle="bold" />
+
+                  <CheckBox
+                      android:id="@+id/ck4"
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:checked="false" />
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginRight="5dp"
+                  android:layout_marginBottom="@dimen/margin_10"
+                  android:orientation="horizontal"
+                  android:weightSum="2">
+
+                  <TextView
+                      android:id="@+id/packages5"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="2"
+                      android:fontFamily="serif"
+                      android:gravity="left"
+                      android:text="Face Design"
+                      android:textAllCaps="true"
+                      android:textColor="#000"
+                      android:textSize="12sp"
+                      android:textStyle="bold" />
+
+                  <CheckBox
+                      android:id="@+id/ck5"
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:checked="false" />
+
+              </LinearLayout>
+          </LinearLayout>
+
+
+      </LinearLayout>
+
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu" />
+
+</RelativeLayout>
